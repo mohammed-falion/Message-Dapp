@@ -1,0 +1,118 @@
+:root {
+  /* Color scheme */
+  --background-color: #0d1117;
+  --app-body-bg-color: #161b22;
+  --text-color: #c9d1d9;
+  --accent-color: #58a6ff;
+  --button-bg-color: #21262d;
+  --button-hover-bg-color: #30363d;
+  --input-bg-color: #0d1117;
+  --input-border-color: #58a6ff;
+  --message-bg-color: #161b22;
+  --neon-shadow: 0 0 8px var(--accent-color);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  background-image: url('City.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes neon-flicker {
+  0% { text-shadow: var(--neon-shadow); }
+  50% { text-shadow: none; }
+  100% { text-shadow: var(--neon-shadow); }
+}
+
+.message-app-body {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: var(--app-body-bg-color);
+  border-radius: 8px;
+  box-shadow: var(--neon-shadow);
+  animation: neon-flicker 1.5s infinite alternate;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 20px;
+}
+
+.massage{
+  display: grid;
+}
+
+h1 {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: var(--neon-shadow);
+  animation: neon-flicker 2s infinite alternate;
+}
+
+button, input {
+  font-family: 'Arial', sans-serif;
+}
+
+button {
+  background-color: var(--button-bg-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--neon-shadow);
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+  box-shadow: 0 0 12px var(--accent-color);
+}
+
+button:disabled {
+  background-color: var(--app-body-bg-color);
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+input {
+  width: calc(100% - 24px);
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background-color: var(--input-bg-color);
+  border: 1px solid var(--input-border-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  box-shadow: var(--neon-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 12px var(--accent-color);
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+p {
+  background-color: var(--message-bg-color);
+  padding: 10px;
+  border-radius: 5px;
+  word-break: break-all;
+  box-shadow: var(--neon-shadow);
+}
+
+.wallet-connected {
+  color: green;
+  margin-left: 8px;
+  font-size: 1.2em; 
+}
