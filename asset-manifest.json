@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Message-dapp/static/css/main.f27bd090.css",
+    "main.js": "/Message-dapp/static/js/main.e1448976.js",
+    "static/js/453.c5135323.chunk.js": "/Message-dapp/static/js/453.c5135323.chunk.js",
+    "static/media/City.gif": "/Message-dapp/static/media/City.80ad843b6b6e7eabe08c.gif",
+    "index.html": "/Message-dapp/index.html",
+    "main.f27bd090.css.map": "/Message-dapp/static/css/main.f27bd090.css.map",
+    "main.e1448976.js.map": "/Message-dapp/static/js/main.e1448976.js.map",
+    "453.c5135323.chunk.js.map": "/Message-dapp/static/js/453.c5135323.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f27bd090.css",
+    "static/js/main.e1448976.js"
+  ]
+}
